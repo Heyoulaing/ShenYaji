@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>计量证书查询</title>
+  <!-- 引入Tailwind CSS简化样式 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans m-0 p-0">
+  
+
+  <!-- 返回+标题栏 -->
+  <div class="bg-blue-600 text-white px-4 py-3 w-full">
+    <div class="flex items-center justify-between">
+      <button class="flex items-center">
+        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        返回
+      </button>
+      <div class="text-lg font-medium">计量证书查询</div>
+      <div class="w-8"></div>
+    </div>
+  </div>
+
+  <!-- 显示证书内容按钮 - 背景色 #3588CC -->
+  <div class="px-4 py-4 w-full">
+    <button class="w-full bg-[#3588CC] text-white py-3 rounded text-lg">显示证书内容</button>
+  </div>
+
+  <!-- 证书信息表格 - 适配手机端，间距2px，单行显示 -->
+  <div class="px-4 w-full box-border">
+    <!-- grid布局：左侧1/4，右侧3/4，列间距2px -->
+    <div class="grid grid-cols-[30%_70%] gap-x-0.5 bg-white rounded-lg overflow-hidden">
+      <!-- 左侧标签列：强制单行显示，不换行 -->
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis border-b-[2px]">单号</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">26AA00084</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis border-b-[2px]">证书编号</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">JHJL2025120300185</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis border-b-[2px]">送检单位</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">中交天津航道局有限公司</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis border-b-[2px]">计量器具名称</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">振弦式渗压计</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis border-b-[2px]">型号/规格</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">VWP-1</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis  border-b-[2px]">出厂编号</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">Y0073200</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis  border-b-[2px]">管理编号</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">/</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis  border-b-[2px]">制造单位</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">南京宥思工程仪器有限公司</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis border-b-[2px]">批准人</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">苏长青</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis border-b-[2px]">校准员</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">丁俊杰</div>
+
+      <div class="bg-[#9ED4F3] py-3 px-2 text-center font-medium whitespace-nowrap overflow-hidden text-ellipsis border-b-[2px]">校准日期</div>
+      <div class="bg-white py-3 px-2 border border-gray-200 rounded">20251203</div>
+    </div>
+  </div>
+</body>
+</html>
